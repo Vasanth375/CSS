@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document - overflow with visible value</title>
+    <style>
+        div{
+            width: 200px;
+            outline: 3px dashed rgb(18, 27, 197);
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .solvedDiv{
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Words seperated from space are displayed correctly but the string is very lengthy like: <span style="color: red;"> withthiswecanshowsalloverflowingcontentoutsidetheelement</span> 
+        It's  hard to fix into the width given. 
+    </div>
+        <p> So to fix the above issue we use overflow-wrap : break-word</p>
+    <div>
+        <span class="solvedDiv">withthiswecanshowsalloverflowingcontentoutsidetheelement</span>
+    </div>
+</body>
+</html>

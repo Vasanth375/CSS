@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        *{
+            font-size: 1.2rem;
+        }
+
+        div p{
+            background-color: red;
+            padding-bottom: 1px;
+        }
+        div[data-color]{
+            background-color: red;
+            padding-bottom: 1px;
+        }
+        /*this is an example of attribute selector*/
+
+        /*specific attribute selector*/
+        div[data-color="green"]{
+            background-color: rgb(26, 238, 26);
+        }
+
+        /*combinators*/
+        /*Descendent combinators: selector1 selector2 all selector2 elements should be under the 
+        element of selector1*/
+
+        /*child combinato(>)r: all the */
+        div > h3{
+            background-color: rgb(0, 0, 241);
+        }
+        /*Adjacent Sibling Combinator(+): only adjacent tags 
+          general sibling(~) */
+
+        /*pesudo classes and psuedo elements
+        CSS provides very good was to of selectors to hover or after, before
+        pseudo classes - html elements(selectors) defining with 
+        pseudo elements - 
+        */
+        .after-pseudo::after{
+            content: "";
+            color: red;
+        }
+
+        div{
+            display: flex;
+            justify-content: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div data-color="red">this is red color attribute selectors</div>
+    <div data-color="green">this is green color</div>
+
+    <div>
+        <p>This is red and combinators example</p>
+        <p>this will be also red and combinators</p>
+    </div>
+
+    <div>
+        <h3>This is heading 3 and child combinators</h3>
+    </div>
+
+    <div class="after-pseudo">
+        this is the after pseudo element
+    </div>
+</body>
+</html>

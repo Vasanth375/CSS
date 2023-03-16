@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello!</title>
+        <style>
+            /* To make the content more responsive in any device 
+            we can use flexbox also and using flex-wrap property of wrap value we can wrap the content according to the width */
+            #container{
+                display: flex;
+                flex-wrap: wrap;/* wrap the elements if you reached the end */
+                
+            }
+
+            #container > div{
+                background-color: springgreen;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            thisisexampleofthecontentwithoutspace
+            <div>1.This is Content</div>
+            <div>2.This is Content</div>
+            <div>3.This is Content</div>
+            <div>4.This is Content</div>
+            <div>5.This is Content</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius</title>
+    <style>
+        .box-div{
+            border: 5px outset black;
+            border-radius: 10px 10%;
+            margin: 0 10px;
+            font-size: large;
+            margin-bottom: 1em;
+            max-width: 450px;
+            padding: 10px;
+        }
+
+        .circle-div{
+            border: 1px solid coral;
+            border-radius: 50%;
+            width: 220px;
+            height: 100px;
+            padding: 90px 30px;
+            text-align: center;
+            background-color: coral;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 5.7em;
+        }
+
+        .border-style-div{
+            border: 5px solid blue;
+            margin-top: 1em;
+            max-width: 450px;
+            border-style: double;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-div">
+        This is an example of the border property
+        Border-radius is the property used to make our border curvy shape on top-left, top-right, bottom-left, bottom-right
+        <p>
+            Here - border-radius property has two values 10px and 10% <br>
+            10px is for top-left and bottom-right <br>
+            10% is for top-right and bottom-left
+        </p>
+    </div>
+
+    <div class="circle-div">
+        Border-radius most commonly used to convert boxes into circles by setting border-radius property to it's half of the length of a square
+        element
+    </div>
+
+    <div class="border-style-div">
+        <p>
+            border-style also have the attributes <span>none</span> and <span>hidden</span> both have 
+            the same effect except <span>hidden</span> works for border conflict resolution for table elements.
+            In a table element with multiple borders, <span>none</span> has the lowest priority (meaning in a conflict, border would show)
+            and <span>hidden</span> has the highest priority (meaning in a conflict, border would not show).
+        </p>
+    </div>
+</body>
+</html>

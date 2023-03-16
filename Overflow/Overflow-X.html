@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow x and y axis</title>
+    <style>
+        div{
+            width: 250px;
+            margin-bottom: 12px;
+            border: 1px solid;
+        }   
+
+        .overflow-hidden{
+            overflow-x: hidden;/*when content is overflowed it should be hidden not displayed in the page 
+            overflow-x means left and right edge areas, simply (Horizontal)
+            values visible, scroll, hidden, auto
+            */
+        }
+
+        .overflow-visible{
+            overflow-x: visible;
+        }
+
+        .overflow-scroll{
+            overflow-x: scroll;
+        }
+
+        .overflow-auto{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>the overlow x axis proeprty sets what shows when a content is Overflowed from the element in left and right edges</p>
+    <p><code>overflow-x: hidden;</code> hides the text </p>
+    <div class="overflow-hidden">
+        QWERTYUIOPASDFGHJKLZXCVBNM
+    </div>
+
+    <p><code>overflow-x: visible</code> displays the text outside the box</p>
+    <div class="overflow-visible">
+        QWERTYUIOPASDFGHJKLZXCVBNM
+    </div>
+
+    <p><code>overflow-x: scroll;</code> adds a scroll bar</p>
+    <div class="overflow-scroll">
+        QWERTYUIOPASDFGHJKLZXCVBNM
+    </div>
+
+    <p><code>overflow: auto;</code> equivalent to scroll</p>
+    <div class="overflow-auto">
+        QWERTYUIOPASDFGHJKLZXCVBNM
+    </div>
+</body>
+</html>

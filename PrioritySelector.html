@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1st one*/
+        /*here we have created an css rule for list 
+        in order and the color of the text is pink
+        in the second css rule will overwrite the first one*/
+        /* li{
+            color: pink;
+        }
+        li{
+            color: blueviolet;
+        } */
+
+        /*2nd specificity*/
+        
+        /*This is given most specifically thats why it's  not overwritten*/
+        
+        #location{/*id selector has most important selector*/
+            color: black;
+        }
+        .list-item{/*class selector It's important but not morethan id */
+            color: wheat;
+        }
+        li{/*tag selector is least important selector*/
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>This is how we can determine CSS precedence</h2>
+    <ol>
+        <li class="list-item" id="location">Find the location of the css rule</li>
+        <li class="list-item" id="location">Specificity of the css rule</li>
+    </ol>
+</body>
+</html>

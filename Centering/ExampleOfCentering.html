@@ -1,0 +1,49 @@
+<!-- The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual 
+    formatting model.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .centeringUsingTransform{
+                border: solid red;
+                /* translate(x,y) x axis make the text moves forward to horizontally
+                y axis moves text down side vertically. Rotate will rotate the class 
+                to some specific degrees */
+                transform: translate(250px, 100px) rotate(180deg);
+                width: 140px;
+                height: 60px;
+            }
+
+            .centeringUsingMargin{
+                /*This will center the div element in responsive way and it's content also centered*/
+                margin: 0 auto;
+                margin-bottom: 50px;
+                width: 140px;
+                border: 10px solid ;
+                margin-top: 250px;  /*Taking the div element to down means giving the margin top will increase the space at top*/
+                text-align: center; /*This will center the text in the div centeringUsingTransform*/
+            }
+
+            .UsingText-align{
+                /*Using this property we can center the text */
+                text-align: center;
+                border: 5px solid ;
+                width: 150px;
+                height: 119px;
+                padding: 1%;    /*Making equal sides from content to border*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centeringUsingTransform"><p>Text is centered using transform property</p></div>
+        
+        <div class="centeringUsingMargin"> <p>This text is centered using margin property</p></div>
+
+        <div class="UsingText-align"><p>By using text-align property we can make texts center <br> note: only text not entire block</p></div>
+        
+    </body>
+</html>

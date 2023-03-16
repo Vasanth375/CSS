@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapsing</title>
+    <style>
+        /*remember the box model diagram*/
+        .container{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .div-margin{
+            margin: 100px;  /*final layer margin */
+            border: 10px solid #129;    /*3rd layer border defining some pixels of color this between margin and padding*/
+            width: 400px;   /*Providing the width to the content*/
+            background-color: rgb(199, 144, 77);
+            padding: 50px;
+        }
+        .div-border{
+            padding: 50px; /*2nd layer giving padding means space between content and the border*/
+            border: 10px solid #154;
+            background-color: rgb(69, 125, 174);
+            width: 280px;
+        }
+        .div-padding{
+            padding: 50px; /*2nd layer giving padding means space between content and the border*/
+            border: 10px solid #1234;
+            background-color: rgb(55, 143, 143);
+            width: 150px;
+        }
+        .content{
+            padding: 50px;
+            border: 10px solid;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="div-margin">
+        Margin of the element
+        <div class="div-border">
+            border of the element
+            <div class="div-padding">
+                padding of the element
+                <div class="content">
+                    Some content
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <hr>
+    <div>
+        Some other content
+    </div>
+</body>
+</html>
